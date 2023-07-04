@@ -57,7 +57,6 @@
             <h3>Contact Form</h3>
           </div>
           <form
-            id="contact-form"
             name="contact-form"
             method="post"
             data-netlify="true"
