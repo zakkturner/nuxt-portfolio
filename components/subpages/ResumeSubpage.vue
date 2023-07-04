@@ -93,12 +93,29 @@
       <div class="row">
         <div class="col-sm-12 col-md-12">
           <div class="download-cv-block">
-            <a class="button" target="_blank" href="#">Download CV</a>
+            <button class="button" @click.prevent="downloadFile">
+              Download CV
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import axios from "axios";
+import FileSaver from "file-saver";
+
+const downloadFile = async () => {
+  try {
+    const response = await axios.get("/resume/resume.pdf", {
+      responseType: "blob",
+    });
+    const fileName = "Zachary_Turner_Resume.pdf";
+    FileSaver.saveAs(response.data, fileName);
+  } catch (error) {
+    console.error("Error downloading file: ", error);
+  }
+};
+</script>
 <style lang=""></style>
