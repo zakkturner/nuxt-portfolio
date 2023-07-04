@@ -30,6 +30,7 @@ const projects = [
     img_src: "ofod.png",
     site: " https://www.onefutureonedelta.com/content/ifs/en/home.html",
   },
+
   {
     id: 4,
     name: "Empower Global",
@@ -39,6 +40,16 @@ const projects = [
     categories: ["all", "ecommerce"],
     img_src: "eg1.png",
     site: "https://stg.shopwitheg.com/",
+  },
+  {
+    id: 10,
+    name: "Incident IQ",
+    description:
+      "Developed and maintained a marketing website for a K-12 SaaS company.",
+    short_description: "Wordpress Development",
+    categories: ["all", "wordpress"],
+    img_src: "iiq.gif",
+    site: "https://www.incidentiq.com/",
   },
 
   // {
@@ -62,7 +73,6 @@ const projects = [
     img_src: "in.png",
     site: "https://www.interactivenerd.com",
   },
-
   {
     id: 7,
     name: "Sign Up Component",
@@ -95,16 +105,6 @@ const projects = [
     site: "https://jcvu360.vercel.app/",
   },
 
-  {
-    id: 10,
-    name: "Incident IQ",
-    description:
-      "Developed and maintained a marketing website for a K-12 SaaS company.",
-    short_description: "Wordpress Development",
-    categories: ["all", "wordpress"],
-    img_src: "iiq.gif",
-    site: "https://www.incidentiq.com/",
-  },
   {
     id: 11,
     name: "Wish Atlanta",

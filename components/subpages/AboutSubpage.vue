@@ -5,19 +5,19 @@
       <div class="section-title-block">
         <div class="section-title-wrapper clearfix">
           <h2 class="section-title">About Me</h2>
-          <h5 class="section-description">Creative Frontend Developer</h5>
+          <h5 class="section-description">Creative Web Developer</h5>
         </div>
       </div>
 
       <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
           <div class="my-photo-block tilt-effect">
-            <img src="images/upwork.jpg" alt="" />
+            <img src="images/upwork.jpg" alt="Zach Turner | Web Developer" />
           </div>
         </div>
 
         <div class="col-sm-6 col-md-6 col-lg-4">
-          <h3>Experienced Front End Developer</h3>
+          <h3>Experienced Web Developer</h3>
           <p>
             I am a Javascript developer with experience working on high
             visibility applications with companies, such as Delta Airlines and
@@ -63,22 +63,28 @@
 
           <ul class="social-links">
             <li>
-              <a class="tip social-button" href="#" title="Twitter"
-                ><i class="fa fa-twitter"></i
+              <a
+                class="tip social-button"
+                href="https://www.linkedin.com/in/zach-t-1aa273165/"
+                title="LinkedIn"
+                ><i class="fa fa-linkedin"></i
               ></a>
             </li>
             <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
             <li>
-              <a class="tip social-button" href="#" title="Facebook"
-                ><i class="fa fa-facebook"></i
+              <a
+                class="tip social-button"
+                href="https://github.com/zakkturner"
+                title="Github"
+                ><i class="fa fa-github"></i
               ></a>
             </li>
-            <li>
+            <!-- <li>
               <a class="tip social-button" href="#" title="Google Plus"
                 ><i class="fa fa-google-plus"></i
               ></a>
-            </li>
-            <li>
+            </li> -->
+            <!-- <li>
               <a class="tip social-button" href="#" title="Youtube"
                 ><i class="fa fa-youtube"></i
               ></a>
@@ -87,7 +93,7 @@
               <a class="tip social-button" href="#" title="Instagram"
                 ><i class="fa fa-instagram"></i
               ></a>
-            </li>
+            </li> -->
             <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
             <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
           </ul>
