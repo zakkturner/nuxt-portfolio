@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: ["nuxt-icon"],
   devtools: { enabled: true },
   app:{
     head:{
@@ -30,5 +31,6 @@ export default defineNuxtConfig({
         {src: '/js/main.js', body: true},
       ]
     }
-  }
+  },
+ 
 })

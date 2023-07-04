@@ -21,7 +21,7 @@
                   <i class="pe-7s-icon pe-7s-map-marker"></i>
                 </div>
                 <div class="ci-text">
-                  <h5>Los Angeles, USA</h5>
+                  <h5>Atlanta, GA USA</h5>
                 </div>
               </div>
               <div class="contact-info-block">
@@ -29,7 +29,7 @@
                   <i class="pe-7s-icon pe-7s-mail"></i>
                 </div>
                 <div class="ci-text">
-                  <h5>alexsmith@example.com</h5>
+                  <h5>zakkturner1993@gmail.com</h5>
                 </div>
               </div>
               <div class="contact-info-block">
@@ -37,7 +37,7 @@
                   <i class="pe-7s-icon pe-7s-call"></i>
                 </div>
                 <div class="ci-text">
-                  <h5>+123 654 78900</h5>
+                  <h5>317-728-0446</h5>
                 </div>
               </div>
               <div class="contact-info-block">

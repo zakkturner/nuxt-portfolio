@@ -18,13 +18,13 @@
                 <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
               </li>
               <li>
-                <a class="filter btn btn-sm btn-link" data-group="media">Media</a>
+                <a class="filter btn btn-sm btn-link" data-group="frontend">Frontend</a>
               </li>
               <li>
-                <a class="filter btn btn-sm btn-link" data-group="illustration">Illustration</a>
+                <a class="filter btn btn-sm btn-link" data-group="illustration">Ecommerce</a>
               </li>
               <li>
-                <a class="filter btn btn-sm btn-link" data-group="video">Video</a>
+                <a class="filter btn btn-sm btn-link" data-group="video">Wordpress</a>
               </li>
             </ul>
             <!-- End of Portfolio filter -->
@@ -33,12 +33,12 @@
             <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
 
               <!-- Portfolio Item 1 -->
-              <figure class="item" data-groups='["all", "media"]'>
+              <figure class="item" data-groups='["all", "frontend"]'>
                 <a class="ajax-page-load" href="portfolio-1.html">
-                  <img src="images/portfolio/1.jpg" alt="">
+                  <img src="images/portfolio/dbiz.gif" alt="">
                   <div>
-                    <h5 class="name">Project Name</h5>
-                    <small>Media</small>
+                    <h5 class="name">Delta Business</h5>
+                    <small>Frontend Development</small>
                     <i class="pe-7s-icon pe-7s-display2"></i>
                   </div>
                 </a>
