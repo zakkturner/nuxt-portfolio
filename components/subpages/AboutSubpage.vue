@@ -12,7 +12,7 @@
       <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
           <div class="my-photo-block tilt-effect">
-            <img src="images/upwork.jpg" alt="Zach Turner | Web Developer" />
+            <img src="/images/upwork.jpg" alt="Zach Turner | Web Developer" />
           </div>
         </div>
 
