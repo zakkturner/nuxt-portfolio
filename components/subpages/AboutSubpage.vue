@@ -19,19 +19,20 @@
         <div class="col-sm-6 col-md-6 col-lg-4">
           <h3>Experienced Web Developer</h3>
           <p>
-            I am a Javascript developer with experience working on high
-            visibility applications with companies, such as Delta Airlines and
-            Sean “Puffy'' Combs' Combs Enterprises. I focus on front end
-            frameworks such as React and Angular.
+            I am a Web developer with experience working on high visibility
+            applications with companies, such as Delta Airlines and Sean
+            “Puffy'' Combs' Combs Enterprises. I focus on front end frameworks
+            such as React and Vue.
           </p>
           <p>
-            I have a passion for Creative Development (GSAP and Three.js), Web
+            I have a passion for Creative Development(GSAP and Three.js), Web
             Performance, Ecommerce Development, Web Accessibility, and headless
             JAM stack (Javascript, API’s, Markup) Applications. To grow my
             skills I focus on building a JAMstack application for a developer
-            community called Interactive Nerd, practice game dev with C# and
-            Unity as a hobby and occasionally freelance to help small businesses
-            in my community.
+            community called Interactive Nerd, doing fullstack personal projects
+            with Vue.js and Laravel, practice game dev with C# and Unity as a
+            hobby and occasionally freelance to help small businesses in my
+            community.
           </p>
         </div>
 

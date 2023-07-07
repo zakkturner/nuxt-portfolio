@@ -30,7 +30,7 @@
           </li>
           <li>
             <a class="filter btn btn-sm btn-link" data-group="wordpress"
-              >Wordpress</a
+              >Wordpress/PHP</a
             >
           </li>
         </ul>

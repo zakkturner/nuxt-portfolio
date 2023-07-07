@@ -66,7 +66,7 @@ const projects = [
     id: 6,
     name: "Interactive Nerd",
     description:
-      "Online platform to learn coding. This site is a JAMStack project that was built in a team using React. Our database is connected to Contentful API. We are making a custom dashboard and Shopify for accounts and for the admins",
+      "Online platform to learn coding. This site is a JAMStack project that was built in a team using React. Our database is connected to Contentful API.",
     short_description: "Frontend Development",
     categories: ["all", "frontend"],
 
