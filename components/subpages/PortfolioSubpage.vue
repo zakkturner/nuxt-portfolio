@@ -44,7 +44,7 @@
           <!-- Portfolio Item 1 -->
           <PortfolioItem
             v-for="project in projects"
-            key="project.id"
+            :key="project.id"
             :name="project.name"
             :description="project.description"
             :short_description="project.short_description"
