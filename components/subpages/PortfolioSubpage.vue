@@ -41,7 +41,7 @@
           id="portfolio_grid"
           class="portfolio-grid portfolio-masonry masonry-grid-3"
         >
-          <!-- Portfolio Item 1 -->
+          <!-- Portfolio Item  -->
           <PortfolioItem
             v-for="project in projects"
             :key="project.id"
@@ -52,7 +52,7 @@
             :image="project.img_src"
             :site="project.site"
           />
-          <!-- /Portfolio Item 1 -->
+          <!-- /Portfolio Item  -->
         </div>
         <!-- /Portfolio Grid -->
       </div>

@@ -1,6 +1,6 @@
 <template>
   <figure class="item" :data-groups="JSON.stringify(categories)">
-    <a :href="site">
+    <a :href="site" target="_blank">
       <img :src="`images/portfolio/${image}`" alt="" />
       <div>
         <h5 class="name">{{ name }}</h5>
