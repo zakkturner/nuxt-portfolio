@@ -39,7 +39,7 @@ const projects = [
     short_description: "Ecommerce Development",
     categories: ["all", "ecommerce"],
     img_src: "eg1.png",
-    site: "https://stg.shopwitheg.com/",
+    site: "https://empowerglobal.shop/",
   },
   {
     id: 10,
@@ -47,7 +47,7 @@ const projects = [
     description:
       "Developed and maintained a marketing website for a K-12 SaaS company.",
     short_description: "Wordpress Development",
-    categories: ["all", "wordpress"],
+    categories: ["all", "php"],
     img_src: "iiq.gif",
     site: "https://www.incidentiq.com/",
   },
@@ -131,7 +131,7 @@ const projects = [
     name: "4th Ave Market",
     description: "Converted their Shopify store to Shopify 2.0",
     short_description: "Ecommerce Development",
-    categories: ["all", "fecommerce"],
+    categories: ["all", "ecommerce"],
 
     site: "https://spndwisely.com/",
     img_src: "4thave.png",
@@ -145,6 +145,28 @@ const projects = [
     site: "https://elated-banach-ff4e10.netlify.app/",
     categories: ["all", "frontend"],
     img_src: "minicoop.png",
+  },
+
+  {
+    id: 15,
+    name: "Crosby by Mollie Burch",
+    description:
+      "Redesigned Shopify theme and added more animations and videos, redesigned blog, and worked on google analytics.",
+    short_description: "Ecommerce Development",
+    site: "https://www.crosbybymollieburch.com/",
+    categories: ["all", "ecommerce"],
+
+    img_src: "crosby.gif",
+  },
+  {
+    id: 16,
+    name: "Ulucky Dog Games",
+    description: "Added Bitcoin payment gateway on a Luna Node Server.",
+    short_description: "Ecommerce Development, PHP Development",
+    site: "https://www.uluckydog.games/",
+    categories: ["all", "ecommerce", "php"],
+
+    img_src: "ulucky.png",
   },
 ];
 export default projects;

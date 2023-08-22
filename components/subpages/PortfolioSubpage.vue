@@ -29,9 +29,7 @@
             >
           </li>
           <li>
-            <a class="filter btn btn-sm btn-link" data-group="wordpress"
-              >Wordpress/PHP</a
-            >
+            <a class="filter btn btn-sm btn-link" data-group="php">PHP</a>
           </li>
         </ul>
         <!-- End of Portfolio filter -->
