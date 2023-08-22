@@ -108,7 +108,7 @@ import FileSaver from "file-saver";
 
 const downloadFile = async () => {
   try {
-    const response = await axios.get("/resume/resume.pdf", {
+    const response = await axios.get("/resume/Zach_Turner_Resume.pdf", {
       responseType: "blob",
     });
     const fileName = "Zachary_Turner_Resume.pdf";
