@@ -5,56 +5,55 @@
       <div class="dot2"></div>
     </div>
   </div>
-  <ClientOnly>
-    <div id="page" class="page template-style-dark">
-      <!-- Header -->
-      <the-header></the-header>
 
-      <!-- /Header -->
+  <div id="page" class="page template-style-dark">
+    <!-- Header -->
+    <the-header></the-header>
 
-      <!-- Mobile Header -->
-      <the-mobile-header></the-mobile-header>
-      <!-- /Mobile Header -->
+    <!-- /Header -->
 
-      <!-- Arrows Nav -->
-      <arrow-nav></arrow-nav>
-      <!-- /Arrows Nav -->
+    <!-- Mobile Header -->
+    <the-mobile-header></the-mobile-header>
+    <!-- /Mobile Header -->
 
-      <!-- Main Content -->
-      <div id="main" class="site-main">
-        <!-- Page changer wrapper -->
-        <div
-          class="pt-wrapper"
-          style="background-image: url(images/main_bg_light.jpg)"
-        >
-          <!-- Subpages -->
-          <div class="subpages">
-            <!-- Home Subpage -->
-            <HomeSubpage />
-            <!-- End of Home Subpage -->
+    <!-- Arrows Nav -->
+    <arrow-nav></arrow-nav>
+    <!-- /Arrows Nav -->
 
-            <!-- About Me Subpage -->
-            <AboutSubpage />
-            <!-- End of About Me Subpage -->
+    <!-- Main Content -->
+    <div id="main" class="site-main">
+      <!-- Page changer wrapper -->
+      <div
+        class="pt-wrapper"
+        style="background-image: url(images/main_bg_light.jpg)"
+      >
+        <!-- Subpages -->
+        <div class="subpages">
+          <!-- Home Subpage -->
+          <HomeSubpage />
+          <!-- End of Home Subpage -->
 
-            <!-- Resume Subpage -->
-            <ResumeSubpage />
-            <!-- End Resume Subpage -->
+          <!-- About Me Subpage -->
+          <AboutSubpage />
+          <!-- End of About Me Subpage -->
 
-            <!-- Portfolio Subpage -->
-            <PortfolioSubpage />
-            <!-- /Portfolio Subpage -->
+          <!-- Resume Subpage -->
+          <ResumeSubpage />
+          <!-- End Resume Subpage -->
 
-            <!-- Contact Subpage -->
-            <ContactSubpage />
-            <!-- End Contact Subpage -->
-          </div>
+          <!-- Portfolio Subpage -->
+          <PortfolioSubpage />
+          <!-- /Portfolio Subpage -->
+
+          <!-- Contact Subpage -->
+          <ContactSubpage />
+          <!-- End Contact Subpage -->
         </div>
-        <!-- /Page changer wrapper -->
       </div>
-      <!-- /Main Content -->
+      <!-- /Page changer wrapper -->
     </div>
-  </ClientOnly>
+    <!-- /Main Content -->
+  </div>
 </template>
 
 <script setup lang="ts">
