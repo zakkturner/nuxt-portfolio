@@ -24,8 +24,8 @@ export default defineNuxtConfig({
         { rel: "icon", type: "image/png", href: "/icon.png" },
       ],
       script: [
-        { src: "/js/jquery-2.1.3.min.js" },
-        { src: "/js/modernizr.custom.js" },
+        { src: "/js/jquery-2.1.3.min.js", body: true },
+        { src: "/js/modernizr.custom.js", body: true },
         { src: "/js/bootstrap.min.js", body: true },
         { src: "/js/pages-switcher.js", body: true },
         { src: "/js/imagesloaded.pkgd.min.js", body: true },
