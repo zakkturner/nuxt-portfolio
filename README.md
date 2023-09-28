@@ -1,4 +1,5 @@
 ## Resume: A Closer Look at My Frontend/Web Development Career
+![image](https://github.com/zakkturner/nuxt-portfolio/assets/30674356/dd8a160d-ce81-4553-b816-f2fe631ab43b)
 
 Welcome to my personal portfolio! This section provides you with an in-depth view of my career as a Frontend/Web Developer, showcasing my experience working with a diverse range of clients, from small freelance projects to Fortune 500 companies.
 
