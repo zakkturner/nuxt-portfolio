@@ -1,11 +1,11 @@
 <template>
-  <ClientOnly>
-    <div class="preloader">
-      <div class="preloader-animation">
-        <div class="dot1"></div>
-        <div class="dot2"></div>
-      </div>
+  <div class="preloader">
+    <div class="preloader-animation">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
     </div>
+  </div>
+  <ClientOnly>
     <div id="page" class="page template-style-dark">
       <!-- Header -->
       <the-header></the-header>
