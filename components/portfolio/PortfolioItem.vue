@@ -20,6 +20,8 @@ interface Props {
   project: Project
 }
 const props = defineProps<Props>()
+
+
 </script>
 
 <style scoped>

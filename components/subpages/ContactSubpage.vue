@@ -1,3 +1,8 @@
+<script lang="ts" setup>
+
+
+import ContactInfo from "~/components/contact/ContactInfo.vue";
+</script>
 <template>
   <section class="pt-page pt-page-5" data-id="contact">
     <div class="border-block-top-110"></div>
@@ -10,48 +15,7 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-6 col-md-6 subpage-block">
-          <div class="block-title">
-            <h3>Get in Touch</h3>
-          </div>
-          <p>
-            Crafting Beautiful and Functional Websites: Let's Connect and Get
-            Started!
-          </p>
-          <div class="contact-info-block">
-            <div class="ci-icon">
-              <i class="pe-7s-icon pe-7s-map-marker"></i>
-            </div>
-            <div class="ci-text">
-              <h5>Atlanta, GA USA</h5>
-            </div>
-          </div>
-          <div class="contact-info-block">
-            <div class="ci-icon">
-              <i class="pe-7s-icon pe-7s-mail"></i>
-            </div>
-            <div class="ci-text">
-              <h5>zakkturner1993@gmail.com</h5>
-            </div>
-          </div>
-          <div class="contact-info-block">
-            <div class="ci-icon">
-              <i class="pe-7s-icon pe-7s-call"></i>
-            </div>
-            <div class="ci-text">
-              <h5>317-728-0446</h5>
-            </div>
-          </div>
-          <div class="contact-info-block">
-            <div class="ci-icon">
-              <i class="pe-7s-icon pe-7s-check"></i>
-            </div>
-            <div class="ci-text">
-              <h5>Freelance Available</h5>
-            </div>
-          </div>
-        </div>
-
+        <contact-info></contact-info>
         <div class="col-sm-6 col-md-6 subpage-block">
           <div class="block-title">
             <h3>Contact Form</h3>
@@ -123,5 +87,5 @@
     </div>
   </section>
 </template>
-<script lang="ts" setup></script>
+
 <style lang=""></style>
