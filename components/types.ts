@@ -6,4 +6,10 @@
     categories: string[];
     img_src: string;
     site: string;
+    category: Category;
+}
+
+export interface Category{
+    id: number;
+    name: string;
 }

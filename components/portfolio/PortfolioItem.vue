@@ -1,5 +1,5 @@
 <template>
-  <figure class="item" :data-groups="JSON.stringify(categories)">
+  <figure class="item" :data-groups="JSON.stringify(['all', project.category.name])">
 
     <a :href="project.site" target="_blank">
       <img :src="project.img_src" alt="" />
