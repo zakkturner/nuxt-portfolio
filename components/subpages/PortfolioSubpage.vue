@@ -43,13 +43,12 @@
           <PortfolioItem
             v-for="project in projects"
             :key="project.id"
-            :name="project.name"
-            :description="project.description"
-            :short_description="project.short_description"
-            :categories="project.categories"
-            :image="project.img_src"
-            :site="project.site"
+            :project="project"
           />
+
+<!--          <div style="color: #fff" v-for="project in projects">-->
+<!--            {{ project.name }}-->
+<!--          </div>-->
           <!-- /Portfolio Item  -->
         </div>
         <!-- /Portfolio Grid -->
@@ -60,6 +59,22 @@
 </template>
 <script lang="ts" setup>
 import PortfolioItem from "../portfolio/PortfolioItem.vue";
-import projects from "~/data/projects";
+// import projects from "~/data/projects";
+import axios from "axios";
+import { ref, onMounted } from "vue";
+import {Project} from "~/components/types";
+
+const projects = ref<Project[]>([]);
+const err = ref(null);
+onMounted(async () => {
+  try {
+    const response = await axios.get("http://localhost:8000/api/v1/projects");
+    projects.value = response.data;
+    console.log(response.data);
+  } catch (e: any) {
+    err.value = e.message;
+  }
+  console.log("Projects", projects.value);
+});
 </script>
 <style lang=""></style>
