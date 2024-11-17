@@ -2,7 +2,7 @@
   <figure class="item" :data-groups="JSON.stringify(['all', project.category.name])">
 
     <a :href="project.site" target="_blank">
-      <img :src="project.img_src" alt="" />
+      <img :src="project.img_src" :alt="project.name" />
       <div>
         <h5 class="name">{{ project.name }}</h5>
         <p class="description">{{ project.description }}</p>

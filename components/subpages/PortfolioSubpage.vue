@@ -12,45 +12,13 @@
       <!-- Portfolio Content -->
       <div class="portfolio-content">
         <!-- Portfolio filter -->
-        <ul id="portfolio_filters" class="portfolio-filters">
-          <li class="active">
-            <a class="filter btn btn-sm btn-link active" data-group="all"
-              >All</a
-            >
-          </li>
-          <li>
-            <a class="filter btn btn-sm btn-link" data-group="frontend"
-              >Frontend</a
-            >
-          </li>
-          <li>
-            <a class="filter btn btn-sm btn-link" data-group="ecommerce"
-              >Ecommerce</a
-            >
-          </li>
-          <li>
-            <a class="filter btn btn-sm btn-link" data-group="php">PHP</a>
-          </li>
-        </ul>
+      <PortfolioFilters />
         <!-- End of Portfolio filter -->
-
-        <!-- Portfolio Grid -->
-        <div
-          id="portfolio_grid"
-          class="portfolio-grid portfolio-masonry masonry-grid-3"
-        >
-          <!-- Portfolio Item  -->
-          <PortfolioItem
-            v-for="project in projects"
-            :key="project.id"
-            :project="project"
-          />
-
-<!--          <div style="color: #fff" v-for="project in projects">-->
-<!--            {{ project.name }}-->
-<!--          </div>-->
-          <!-- /Portfolio Item  -->
+        <div v-if="loading">
+          <h2>Loading...</h2>
         </div>
+        <!-- Portfolio Grid -->
+       <PortfolioGrid :projects="projects" v-else/>
         <!-- /Portfolio Grid -->
       </div>
       <!-- /Portfolio Content -->
@@ -63,13 +31,21 @@ import PortfolioItem from "../portfolio/PortfolioItem.vue";
 import axios from "axios";
 import { ref, onMounted } from "vue";
 import {Project} from "~/components/types";
+import PortfolioFilters from "~/components/portfolio/PortfolioFilters.vue";
 
 const projects = ref<Project[]>([]);
 const err = ref(null);
+const loading = ref(false);
 onMounted(async () => {
   try {
+    loading.value = true;
+
     const response = await axios.get("http://localhost:8000/api/v1/projects");
     projects.value = response.data;
+    if(response.status == 200){
+      loading.value = false;
+
+    }
     console.log(response.data);
   } catch (e: any) {
     err.value = e.message;
