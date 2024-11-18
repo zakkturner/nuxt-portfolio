@@ -2,9 +2,13 @@
 export default defineNuxtConfig({
   modules: ["nuxt-icon"],
   devtools: { enabled: true },
+  plugins:[
+    '~/plugins/gtag.client.js'
+  ],
   runtimeConfig:{
     public:{
-      api_url: process.env.API_URL
+      api_url: process.env.API_URL,
+      gtagId: process.env.GOOGLE_TAG_ID
     }
   },
   app: {
@@ -29,6 +33,10 @@ export default defineNuxtConfig({
         { rel: "icon", type: "image/png", href: "/icon.png" },
       ],
       script: [
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-21VN3EM4P2",
+          async: true,
+        },
         { src: "/js/jquery-2.1.3.min.js" },
         { src: "/js/modernizr.custom.js" },
         { src: "/js/bootstrap.min.js", body: true },
