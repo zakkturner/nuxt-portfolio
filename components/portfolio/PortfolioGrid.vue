@@ -12,6 +12,7 @@ const props = defineProps<Props>()
   <div
       id="portfolio_grid"
       class="portfolio-grid portfolio-masonry masonry-grid-3"
+      v-if="projects.length > 0"
   >
     <!-- Portfolio Item  -->
     <PortfolioItem
@@ -20,6 +21,9 @@ const props = defineProps<Props>()
         :project="project"
     />
     <!-- /Portfolio Item  -->
+  </div>
+  <div v-else>
+    <h2>No Projects at the moment. Please wait until Zach updates his portfolio!</h2>
   </div>
 </template>
 

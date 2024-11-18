@@ -86,7 +86,7 @@ const api_url = useRuntimeConfig().public.api_url
           <div class="help-block with-errors"></div>
         </div>
         <div v-if="contactMessage" class="form-message">
-          <span>{{contactMessage}}</span>
+          <span>{{contactMessage.message}}!</span>
         </div>
         <input
             type="submit"
@@ -105,5 +105,6 @@ const api_url = useRuntimeConfig().public.api_url
   color: #fff;
   padding-inline: 10px;
   margin-bottom: 10px;
+  border-radius: 8px;
 }
 </style>

@@ -1,3 +1,32 @@
+<script lang="ts" setup>
+import PortfolioItem from "../portfolio/PortfolioItem.vue";
+// import projects from "~/data/projects";
+import axios from "axios";
+import { ref, onMounted } from "vue";
+import {Project} from "~/components/types";
+import PortfolioFilters from "~/components/portfolio/PortfolioFilters.vue";
+
+const projects = ref<Project[]>([]);
+const err = ref(null);
+const loading = ref(false);
+const api_url = useRuntimeConfig().public.api_url
+onMounted(async () => {
+  try {
+    loading.value = true;
+
+    const response = await axios.get(`${api_url}/api/v1/projects`);
+    projects.value = response.data;
+    if(response.status == 200){
+      loading.value = false;
+    }
+    console.log(response.data);
+  } catch (e: any) {
+    err.value = e.message;
+  }
+  console.log("Projects", projects.value);
+});
+</script>
+
 <template>
   <section class="pt-page pt-page-4" data-id="portfolio">
     <div class="border-block-top-110"></div>
@@ -25,32 +54,5 @@
     </div>
   </section>
 </template>
-<script lang="ts" setup>
-import PortfolioItem from "../portfolio/PortfolioItem.vue";
-// import projects from "~/data/projects";
-import axios from "axios";
-import { ref, onMounted } from "vue";
-import {Project} from "~/components/types";
-import PortfolioFilters from "~/components/portfolio/PortfolioFilters.vue";
 
-const projects = ref<Project[]>([]);
-const err = ref(null);
-const loading = ref(false);
-onMounted(async () => {
-  try {
-    loading.value = true;
-
-    const response = await axios.get("http://localhost:8000/api/v1/projects");
-    projects.value = response.data;
-    if(response.status == 200){
-      loading.value = false;
-
-    }
-    console.log(response.data);
-  } catch (e: any) {
-    err.value = e.message;
-  }
-  console.log("Projects", projects.value);
-});
-</script>
 <style lang=""></style>
