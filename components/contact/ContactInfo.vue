@@ -8,7 +8,7 @@
       <h3>Get in Touch</h3>
     </div>
     <p>
-      Crafting Beautiful and Functional Websites: Let's Connect and Get
+      Crafting Beautiful and Functional Websites and Solving your Technical Problems: <br> Let's Connect and Get
       Started!
     </p>
     <div class="contact-info-block">
