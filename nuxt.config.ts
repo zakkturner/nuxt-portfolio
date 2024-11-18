@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   modules: ["nuxt-icon"],
   devtools: { enabled: true },
+  runtimeConfig:{
+    public:{
+      api_url: process.env.API_URL
+    }
+  },
   app: {
     head: {
       title: "Zach Turner | Web Developer",

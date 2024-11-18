@@ -12,7 +12,7 @@
     function portfolio_init() {
         var portfolio_grid = $('#portfolio_grid'),
             portfolio_filter = $('#portfolio_filters');
-            
+
         if (portfolio_grid) {
 
             portfolio_grid.shuffle({
@@ -129,7 +129,7 @@
         $portfolio_container.imagesLoaded(function () {
             setTimeout(function(){
                 portfolio_init(this);
-            }, 500);
+            }, 1500);
         });
 
         // Portfolio hover effect init
