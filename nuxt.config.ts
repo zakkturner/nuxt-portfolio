@@ -36,6 +36,7 @@ export default defineNuxtConfig({
         {
           src: "https://www.googletagmanager.com/gtag/js?id=G-21VN3EM4P2",
           async: true,
+          body: true
         },
         { src: "/js/jquery-2.1.3.min.js" },
         { src: "/js/modernizr.custom.js" },
