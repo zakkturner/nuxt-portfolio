@@ -8,15 +8,19 @@
         <h2>Zach Turner</h2>
         <div class="owl-carousel text-rotation">
           <div class="item">
-            <p class="home-page-description">Web Developer</p>
+            <p class="home-page-description">Full Stack Developer</p>
           </div>
           <div class="item">
-            <p class="home-page-description">Ecommerce developer</p>
+            <p class="home-page-description">Mobile Developer</p>
+          </div>
+          <div class="item">
+            <p class="home-page-description">Shopify Developer</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 <style lang=""></style>
