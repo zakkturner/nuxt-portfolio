@@ -46,7 +46,7 @@
           <!-- Testimonial Content -->
           <div class="testimonial-content">
             <div class="testimonial-text">
-              <img src="/images/press/delta-biz.png" alt="Delta Business" />
+              <img src="/images/press/egpress.png" alt="Empower Global" />
             </div>
           </div>
           <!-- /Testimonial Content -->
@@ -54,19 +54,22 @@
           <div class="testimonial-credits">
             <!-- Picture -->
             <div class="testimonial-picture">
-              <img src="/images/press/delta-logo.png" alt="Delta Logo" />
+              <img
+                src="/images/press/ap-logo.png"
+                alt="Associated Press Logo"
+              />
             </div>
             <!-- /Picture -->
             <!-- Testimonial author information -->
             <div class="testimonial-author-info">
               <p class="testimonial-author">
                 <a
-                  href="https://news.delta.com/delta-business-brings-robust-set-business-travel-tools-products-and-services-under-one-name"
+                  href="https://apnews.com/article/sean-combs-diddy-empower-global-090db9683af1979ed528190b31c386db"
                 >
-                  Delta News
+                  Associated Press
                 </a>
               </p>
-              <p class="testimonial-firm">Delta Business</p>
+              <p class="testimonial-firm">Empower Global</p>
             </div>
           </div>
           <!-- /Testimonial author information -->

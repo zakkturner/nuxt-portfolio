@@ -5,6 +5,7 @@
       <div class="dot2"></div>
     </div>
   </div>
+
   <div id="page" class="page template-style-dark">
     <!-- Header -->
     <the-header></the-header>

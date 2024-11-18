@@ -1,3 +1,32 @@
+<script lang="ts" setup>
+import PortfolioItem from "../portfolio/PortfolioItem.vue";
+// import projects from "~/data/projects";
+import axios from "axios";
+import { ref, onMounted } from "vue";
+import {Project} from "~/components/types";
+import PortfolioFilters from "~/components/portfolio/PortfolioFilters.vue";
+
+const projects = ref<Project[]>([]);
+const err = ref(null);
+const loading = ref(false);
+const api_url = useRuntimeConfig().public.api_url
+onMounted(async () => {
+  try {
+    loading.value = true;
+
+    const response = await axios.get(`${api_url}/api/v1/projects`);
+    projects.value = response.data;
+    if(response.status == 200){
+      loading.value = false;
+    }
+    console.log(response.data);
+  } catch (e: any) {
+    err.value = e.message;
+  }
+  console.log("Projects", projects.value);
+});
+</script>
+
 <template>
   <section class="pt-page pt-page-4" data-id="portfolio">
     <div class="border-block-top-110"></div>
@@ -12,56 +41,18 @@
       <!-- Portfolio Content -->
       <div class="portfolio-content">
         <!-- Portfolio filter -->
-        <ul id="portfolio_filters" class="portfolio-filters">
-          <li class="active">
-            <a class="filter btn btn-sm btn-link active" data-group="all"
-              >All</a
-            >
-          </li>
-          <li>
-            <a class="filter btn btn-sm btn-link" data-group="frontend"
-              >Frontend</a
-            >
-          </li>
-          <li>
-            <a class="filter btn btn-sm btn-link" data-group="ecommerce"
-              >Ecommerce</a
-            >
-          </li>
-          <li>
-            <a class="filter btn btn-sm btn-link" data-group="wordpress"
-              >Wordpress/PHP</a
-            >
-          </li>
-        </ul>
+      <PortfolioFilters />
         <!-- End of Portfolio filter -->
-
-        <!-- Portfolio Grid -->
-        <div
-          id="portfolio_grid"
-          class="portfolio-grid portfolio-masonry masonry-grid-3"
-        >
-          <!-- Portfolio Item 1 -->
-          <PortfolioItem
-            v-for="project in projects"
-            key="project.id"
-            :name="project.name"
-            :description="project.description"
-            :short_description="project.short_description"
-            :categories="project.categories"
-            :image="project.img_src"
-            :site="project.site"
-          />
-          <!-- /Portfolio Item 1 -->
+        <div v-if="loading">
+          <h2>Loading...</h2>
         </div>
+        <!-- Portfolio Grid -->
+       <PortfolioGrid :projects="projects" v-else/>
         <!-- /Portfolio Grid -->
       </div>
       <!-- /Portfolio Content -->
     </div>
   </section>
 </template>
-<script lang="ts" setup>
-import PortfolioItem from "../portfolio/PortfolioItem.vue";
-import projects from "~/data/projects";
-</script>
+
 <style lang=""></style>
