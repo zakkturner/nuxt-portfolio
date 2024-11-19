@@ -1,3 +1,19 @@
+<script setup lang="ts">
+import TheHeader from "~/components/core/headers/TheHeader.vue";
+import TheMobileHeader from "~/components/core/headers/TheMobileHeader.vue";
+import HomeSubpage from "~/components/subpages/HomeSubpage.vue";
+import ResumeSubpage from "~/components/subpages/ResumeSubpage.vue";
+import AboutSubpage from "~/components/subpages/AboutSubpage.vue";
+import ContactSubpage from "~/components/subpages/ContactSubpage.vue";
+import PortfolioSubpage from "~/components/subpages/PortfolioSubpage.vue";
+import ArrowNav from "~/components/core/navigation/ArrowNav.vue";
+import {useVueExitIntent} from "vue-exit-intent";
+import ExitModal from "~/components/core/ExitModal.vue";
+
+const {isShowing, close} = useVueExitIntent();
+
+</script>
+
 <template>
   <div class="preloader">
     <div class="preloader-animation">
@@ -25,7 +41,7 @@
       <!-- Page changer wrapper -->
       <div
         class="pt-wrapper"
-        style="background-image: url(images/main_bg_light.jpg)"
+        style="background-image: url('/images/main_bg_light.jpg')"
       >
         <!-- Subpages -->
         <div class="subpages">
@@ -53,19 +69,13 @@
       <!-- /Page changer wrapper -->
     </div>
     <!-- /Main Content -->
+    <Teleport to="body">
+      <ExitModal v-if="isShowing" @closeModal="close()"/>
+    </Teleport>
   </div>
 </template>
 
-<script setup lang="ts">
-import TheHeader from "~/components/core/headers/TheHeader.vue";
-import TheMobileHeader from "~/components/core/headers/TheMobileHeader.vue";
-import HomeSubpage from "~/components/subpages/HomeSubpage.vue";
-import ResumeSubpage from "~/components/subpages/ResumeSubpage.vue";
-import AboutSubpage from "~/components/subpages/AboutSubpage.vue";
-import ContactSubpage from "~/components/subpages/ContactSubpage.vue";
-import PortfolioSubpage from "~/components/subpages/PortfolioSubpage.vue";
-import ArrowNav from "~/components/core/navigation/ArrowNav.vue";
-</script>
+
 <style>
 .page {
   height: 100vh;
