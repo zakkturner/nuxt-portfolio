@@ -17,23 +17,13 @@
         </div>
 
         <div class="col-sm-6 col-md-6 col-lg-4">
-          <h3>Experienced Web Developer</h3>
+          <h3>Full Stack Developer | Consultant </h3>
           <p>
-            I am a Web developer with experience working on high visibility
-            applications with companies, such as Delta Airlines and Sean
-            “Puffy'' Combs' Combs Enterprises. I focus on front end frameworks
-            such as React and Vue.
+            With over 5 years of experience, I build scalable, high-performing web and mobile applications tailored to client needs. My expertise spans Full Stack Development, eCommerce platforms, API integrations, and WCAG accessibility compliance. I've successfully delivered projects for diverse industries, including commercial real estate, non-profits, and Fortune 500 companies, leveraging cutting-edge technologies like Vue.js, Laravel, Shopify, and AEM.
+
+
           </p>
-          <p>
-            I have a passion for Creative Development(GSAP and Three.js), Web
-            Performance, Ecommerce Development, Web Accessibility, and headless
-            JAM stack (Javascript, API’s, Markup) Applications. To grow my
-            skills I focus on building a JAMstack application for a developer
-            community called Interactive Nerd, doing fullstack personal projects
-            with Vue.js and Laravel, practice game dev with C# and Unity as a
-            hobby and occasionally freelance to help small businesses in my
-            community.
-          </p>
+
         </div>
 
         <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
