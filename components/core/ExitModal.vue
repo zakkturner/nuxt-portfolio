@@ -47,12 +47,12 @@ const changeAnimation =() =>{
     gsap.to( rt,{ rotateZ: -15, ease:"power1"})
   }
 }
-const handleSubmit = () =>{
+const handleSubmit = async () =>{
   try{
 
-    const response = axios.post(`${api_url}/api/v1/feedback`, form)
+    const response = await axios.post(`${api_url}/api/v1/feedback`, form)
     if(response.status === 200){
-      contactMessage.value = response.data;
+      contactMessage.value = response.data.message;
     }
   }catch(e){
     contactMessage.value = e.message;
