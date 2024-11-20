@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "axios": "^1.4.0",
-    "file-saver": "^2.0.5"
+    "file-saver": "^2.0.5",
+    "gsap": "^3.12.5",
+    "vue-exit-intent": "^2.2.0"
   }
 }
