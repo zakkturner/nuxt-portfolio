@@ -1,6 +1,9 @@
 <script setup>
 import { gsap } from 'gsap'
-// const rating = ref(0);
+import axios from "axios";
+import FlashMessage from "~/components/contact/FlashMessage.vue";
+
+const contactMessage = ref(null)
 const form = reactive({
   rating: 0,
   email: '',
@@ -11,6 +14,7 @@ const ratingText = ref(null);
 const exitModal = ref(null);
 const exitContainer = ref(null);
 const exitWhite = ref(null);
+const api_url = useRuntimeConfig().public.api_url;
 
 onMounted(() =>{
   const tl = gsap.timeline();
@@ -44,7 +48,16 @@ const changeAnimation =() =>{
   }
 }
 const handleSubmit = () =>{
-  console.log(form);
+  try{
+
+    const response = axios.post(`${api_url}/api/v1/feedback`, form)
+    if(response.status === 200){
+      contactMessage.value = response.data;
+    }
+  }catch(e){
+    contactMessage.value = e.message;
+        console.log(e);
+  }
 }
 </script>
 <template>
@@ -80,6 +93,7 @@ const handleSubmit = () =>{
             <textarea name="feedback" v-model="form.feedback" rows="5"></textarea>
           </div>
           <div class="form-group">
+            <FlashMessage :message="contactMessage" v-show="contactMessage != null"/>
           <input
               type="submit"
               class="button btn-send"

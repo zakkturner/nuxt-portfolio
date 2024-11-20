@@ -69,8 +69,12 @@ const {isShowing, close} = useVueExitIntent();
       <!-- /Page changer wrapper -->
     </div>
     <!-- /Main Content -->
+
     <Teleport to="body">
-      <ExitModal v-if="isShowing" @closeModal="close()"/>
+      <ExitModal
+          v-if="isShowing"
+          @closeModal="close()"
+      />
     </Teleport>
   </div>
 </template>
