@@ -86,7 +86,7 @@ const api_url = useRuntimeConfig().public.api_url
           <i class="form-control-icon pe-7s-comment"></i>
           <div class="help-block with-errors"></div>
         </div>
-        <FlashMessage :message="contactMessage" v-show="contactMessage != null"/>
+        <FlashMessage :message="contactMessage" v-if="contactMessage != null"/>
         <input
             type="submit"
             class="button btn-send"

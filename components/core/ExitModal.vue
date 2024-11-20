@@ -93,7 +93,7 @@ const handleSubmit = () =>{
             <textarea name="feedback" v-model="form.feedback" rows="5"></textarea>
           </div>
           <div class="form-group">
-            <FlashMessage :message="contactMessage" v-show="contactMessage != null"/>
+            <FlashMessage :message="contactMessage" v-if="contactMessage != null"/>
           <input
               type="submit"
               class="button btn-send"
