@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import axios, {AxiosError} from "axios";
+import axios from "axios";
+import FlashMessage from "~/components/contact/FlashMessage.vue";
 
-  const contactMessage = ref(null);
+const contactMessage = ref(null);
   const formData = reactive({
     name: '',
     email: '',
@@ -85,9 +86,7 @@ const api_url = useRuntimeConfig().public.api_url
           <i class="form-control-icon pe-7s-comment"></i>
           <div class="help-block with-errors"></div>
         </div>
-        <div v-if="contactMessage" class="form-message">
-          <span>{{contactMessage.message}}!</span>
-        </div>
+        <FlashMessage :message="contactMessage" v-if="contactMessage != null"/>
         <input
             type="submit"
             class="button btn-send"
@@ -98,13 +97,3 @@ const api_url = useRuntimeConfig().public.api_url
     </form>
   </div>
 </template>
-<style scoped>
-.form-message{
-  width: fit-content;
-  background: #4cae4c;
-  color: #fff;
-  padding-inline: 10px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-</style>
