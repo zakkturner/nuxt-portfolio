@@ -11,7 +11,7 @@ const api_url = useRuntimeConfig().public.api_url
 <template>
   <figure class="item" :data-groups="JSON.stringify(['all', project.category.name])">
 
-    <a  :href=" project.site !== 'none' ? `https://${project.site}`: '#portfolio'" target="_blank">
+    <a  :href=" project.site !== 'none' ? `${project.site}`: '#portfolio'" target="_blank">
       <img :src="`${api_url}/storage/${project.img_src}`" :alt="project.name" />
       <div>
         <h5 class="name">{{ project.name }}</h5>
